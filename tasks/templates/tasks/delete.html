@@ -1,0 +1,8 @@
+<p>Tens a certeza que queres apagar"{{item}}"?</p>
+
+<a href="{% url 'list' %}" > Cancel</a>
+
+<form method="post" action="">
+    {% csrf_token %}
+    <input type="submit" name="Confirm">
+</form>
